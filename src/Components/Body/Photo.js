@@ -10,12 +10,13 @@ export default function Photo() {
     const[im, setImg] = useState('');
     const[title, setTitle] = useState('');
     const[copyright, setCopyright] = useState('');
+    const[descript, setDescript] = useState('');
 
     useEffect(() => {
         axios
             .get(`https://api.nasa.gov/planetary/apod?api_key=keyqpOTD10PDmB3NlCQvuBgMs4qlPUd911rMfedh&date=2019-07-12`)
             .then(response => {
-                const photofday = response.data.url;
+                const photofday = response.data.hdurl;
                 const titleofday = response.data.title;
                 const copyofday = response.data.copyright
                 console.log('is the the thing?', photofday)
