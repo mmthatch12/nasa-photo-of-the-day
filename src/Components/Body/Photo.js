@@ -15,10 +15,11 @@ export default function Photo() {
                 console.log('is the the thing?', photofday)
                 setImg(photofday)
             })
-        })
+        }, [])
 
     return (
         <div className="photoDay">
+            <img src={im}/>
 
         </div>
     )
