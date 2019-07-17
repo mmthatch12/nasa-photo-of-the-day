@@ -6,7 +6,7 @@ export default function CountButton(props) {
         <div>
             <div>Count: {count}</div>
             <button onClick={() => setCount(count + 1)}>Click to Count Stars!</button>
-            <button onClick={() => setCount(0)}>Reset</button>
+            <button onClick={() => setCount(0)}>Start Over</button>
         </div>
     )
 }

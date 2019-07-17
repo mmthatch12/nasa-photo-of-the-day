@@ -8,6 +8,7 @@ import CountButton from './CountButton'
 export default function Photo() {
     const[im, setImg] = useState('');
     const[title, setTitle] = useState('');
+    const[copyright, setCopyright] = useState('');
 
     useEffect(() => {
         axios
@@ -15,10 +16,12 @@ export default function Photo() {
             .then(response => {
                 const photofday = response.data.url;
                 const titleofday = response.data.title;
+                const copyofday = response.data.copyright
                 console.log('is the the thing?', photofday)
                 console.log('title', titleofday)
                 setImg(photofday)
                 setTitle(titleofday)
+                setCopyright(copyofday)
             })
         }, [])
 
@@ -27,6 +30,7 @@ export default function Photo() {
         <div className="photoDay">
             <Title title={title}/>
             <img className='theImg' src={im}/>
+            
             <CountButton />
         </div>
     )
