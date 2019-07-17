@@ -28,7 +28,6 @@ export default function Photo() {
             <Title title={title}/>
             <img className='theImg' src={im}/>
             <CountButton />
-            
         </div>
     )
 }
