@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Title from './Title'
 import CountButton from './CountButton'
+import Copyright from './Copyright'
 
 // https://api.nasa.gov/planetary/apod?api_key=keyqpOTD10PDmB3NlCQvuBgMs4qlPUd911rMfedh&date=2019-07-12
 
@@ -30,7 +31,7 @@ export default function Photo() {
         <div className="photoDay">
             <Title title={title}/>
             <img className='theImg' src={im}/>
-            
+            <Copyright copy={copyright} />
             <CountButton />
         </div>
     )
