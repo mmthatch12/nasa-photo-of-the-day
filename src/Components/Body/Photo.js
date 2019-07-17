@@ -19,7 +19,7 @@ export default function Photo() {
 
     return (
         <div className="photoDay">
-            <img src={im}/>
+            <img className='theImg' src={im}/>
         </div>
     )
 }
