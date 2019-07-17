@@ -5,7 +5,7 @@ import axios from 'axios';
 // https://api.nasa.gov/planetary/apod?api_key=keyqpOTD10PDmB3NlCQvuBgMs4qlPUd911rMfedh&date=2019-07-12
 
 export default function Photo() {
-    const[im, setImg] = useState([]);
+    const[im, setImg] = useState('');
 
     useEffect(() => {
         axios
@@ -15,5 +15,11 @@ export default function Photo() {
                 console.log('is the the thing?', photofday)
                 setImg(photofday)
             })
-        }, [])
+        })
+
+    return (
+        <div className="photoDay">
+
+        </div>
+    )
 }
