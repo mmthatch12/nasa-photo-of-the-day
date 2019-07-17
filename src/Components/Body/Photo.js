@@ -19,11 +19,13 @@ export default function Photo() {
                 const photofday = response.data.hdurl;
                 const titleofday = response.data.title;
                 const copyofday = response.data.copyright
+                const descofday = response.data.explanation
                 console.log('is the the thing?', photofday)
                 console.log('title', titleofday)
                 setImg(photofday)
                 setTitle(titleofday)
                 setCopyright(copyofday)
+                setDescript(descofday)
             })
         }, [])
 
