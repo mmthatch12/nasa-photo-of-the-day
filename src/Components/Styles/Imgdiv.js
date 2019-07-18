@@ -7,7 +7,8 @@ const Imdiv = styled.div`
 `;
 
 const Descdiv = styled.div`
-    width: 400px;
+    width: 350px;
+    padding-top: 120px;
 `;
 
 export {Imdiv, Descdiv }

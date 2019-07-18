@@ -35,12 +35,15 @@ export default function Photo() {
     return (
 
         <div className="photoDay">
-            <Title title={title}/>
             <Imdiv>
-                <TheImg src={im}/>
+                <div>
+                    <Title title={title}/>
+                    <TheImg src={im}/>
+                    <Copyright copy={copyright} />
+                </div>
                 <Description desc={descript} /> 
-            </Imdiv>           
-            <Copyright copy={copyright} />
+            </Imdiv> 
+
             <CountButton />
         </div>
     )
