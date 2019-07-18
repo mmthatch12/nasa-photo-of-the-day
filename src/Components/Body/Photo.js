@@ -36,6 +36,7 @@ export default function Photo() {
 
         <div className="photoDay">
             <Imdiv>
+                <CountButton />
                 <div>
                     <Title title={title}/>
                     <TheImg src={im}/>
@@ -44,7 +45,7 @@ export default function Photo() {
                 <Description desc={descript} /> 
             </Imdiv> 
 
-            <CountButton />
+
         </div>
     )
 }
