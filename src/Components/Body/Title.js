@@ -1,7 +1,13 @@
 import React from "react";
+import styled from 'styled-components'
+
+const TheTitle = styled.h2`
+    margin: 5px;
+    text-decoration: underline grey;
+`;
 
 export default function Title(props) {
     return (
-            <h2>{props.title}</h2>
+            <TheTitle>{props.title}</TheTitle>
     )
 }
