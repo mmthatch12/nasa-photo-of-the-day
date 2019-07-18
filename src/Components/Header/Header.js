@@ -1,10 +1,10 @@
 import React from "react";
+import TheHeader from '../Styles/HeaderS'
 
 export const Header = () => {
     return (
-        <div className='headerCont'>
-            <h1>Nasa Photo of The Day</h1>
-
+        <div>
+            <TheHeader>Nasa Photo of The Day</TheHeader>
         </div>
     )
 }
