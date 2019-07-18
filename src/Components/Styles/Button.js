@@ -1,11 +1,10 @@
-import React from 'react'
-import { Button } from 'semantic-ui-react'
+import React, { useState } from "react";
+import styled from 'styled-components'
 
-const Button = () => (
-    <div>
-      <Button primary>Primary</Button>
-      <Button secondary>Secondary</Button>
-    </div>
-  )
-  
-  export default Button
+
+const Thebutton = styled.button`
+    border: 3px solid blue;
+`
+
+export default Thebutton
+
