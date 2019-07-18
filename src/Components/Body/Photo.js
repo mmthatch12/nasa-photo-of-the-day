@@ -5,6 +5,7 @@ import CountButton from './CountButton'
 import Copyright from './Copyright'
 import Description from './Description'
 import TheImg from '../Styles/Image'
+import { Imdiv } from '../Styles/Imgdiv'
 
 // https://api.nasa.gov/planetary/apod?api_key=keyqpOTD10PDmB3NlCQvuBgMs4qlPUd911rMfedh&date=2019-07-12
 
@@ -35,8 +36,10 @@ export default function Photo() {
 
         <div className="photoDay">
             <Title title={title}/>
-            <Description desc={descript} />
-            <TheImg src={im}/>
+            <Imdiv>
+                <TheImg src={im}/>
+                <Description desc={descript} /> 
+            </Imdiv>           
             <Copyright copy={copyright} />
             <CountButton />
         </div>

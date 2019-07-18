@@ -1,7 +1,8 @@
 import React from 'react'
+import { Descdiv } from '../Styles/Imgdiv'
 
 export default function Description( {desc} ) {
     return (
-        <p>{desc}</p>
+        <Descdiv>{desc}</Descdiv>
     )
 }
